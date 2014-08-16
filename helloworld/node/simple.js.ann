@@ -1,0 +1,9 @@
+@http.handler
+func(@req, @res)
+    @req is @http.request
+
+    @res is @http.response
+     - statusCode(num) is status(num)
+     - setHeader(key, val) is header(key, val)
+     - send(body) is body(body)
+     - finally end()
